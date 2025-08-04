@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herrera Handyman Service</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional custom Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            handyman: '#1f2937', // dark grayish
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 border-4 border-solid border-red-500">
+
+    <header class="bg-white shadow p-4 border-4 border-solid border-green-500">
+        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-4">
+          
+          <!-- Logo Section -->
+          <div class="flex-shrink-0 border-4 border-solid border-red-500">
+            <img src="HHS LOGO.png" alt="Herrera Handyman Logo" class="h-auto sm:w-16 md:w-16 lg:w-16 xl:w-64 max-w-full" />
+          </div>
+      
+          <!-- Nav Section -->
+          <div class="flex flex-col justify-center flex-grow items-end sm:items-center w-1/2 border-4 border-solid border-red-500">
+            <h1 class="text-xl sm:text-2xl font-bold text-blue-800 mb-2 text-right sm:text-center">
+              Herrera Handyman Service
+            </h1>
+            <nav>
+              <ul class="flex flex-wrap gap-6 text-gray-700 text-sm justify-end sm:justify-center">
+                <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+                <li><a href="about.html" class="hover:text-blue-600">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+      
+        </div>
+      </header>
+      
+      
+  <!-- Main Content -->
+  <main class="p-8">
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">What We Do</h2>
+      <p class="max-w-xl mx-auto text-md">
+        From plumbing to painting, electrical to drywall — we handle it all with professional quality and honest service.
+      </p>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="mt-10 text-center">
+      <button onclick="showContact()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded">
+        Get a Free Estimate
+      </button>
+    </section>
+
+    <!-- Contact (hidden initially) -->
+    <section id="contact" class="hidden mt-10 text-center">
+      <h3 class="text-xl font-bold mb-2">Contact Us</h3>
+      <p>Phone: <a href="tel:6268186727" class="text-blue-600 underline">626-818-6727</a></p>
+      <p>Email: <a href="mailto:service@herrerahandyman.com" class="text-blue-600 underline">service@herrerahandyman.com</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-handyman text-white text-center p-4 mt-10">
+    &copy; 2025 Herrera Handyman Service. All rights reserved.
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Herrera Handyman Service</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional custom Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            handyman: '#1f2937',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 border-4 border-solid border-red-500">
+
+  <header class="bg-white shadow p-4 border-4 border-solid border-green-500">
+    <nav class="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
+      <div class="text-xl font-bold text-blue-800">Herrera Handyman Service</div>
+      
+      <ul class="flex gap-6 text-gray-700 text-sm">
+        <li><a href="index.html#services" class="hover:text-blue-600">Services</a></li>
+        <li><a href="about.html" class="text-blue-600 font-semibold">About</a></li>
+        <li><a href="index.html#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Get a Quote
+      </button>
+    </nav>
+  </header>
+
+  <!-- About Content -->
+  <main class="p-8 max-w-4xl mx-auto">
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">Our Story</h2>
+      <p class="text-md mb-6">
+        Herrera Handyman Service began with a simple mission: to provide reliable, quality help for everyday fixes and projects. Over the years, what started as a small service has grown into a trusted name for homeowners and businesses alike.
+      </p>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-xl font-semibold mb-3">Why We Do It</h2>
+      <p class="text-md mb-6">
+        We believe that every home and business deserves attention to detail and honest work. Our goal is to take the stress out of maintenance, one project at a time.
+      </p>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-xl font-semibold mb-3">About the Owner</h2>
+      <p class="text-md">
+        Daniel Herrera is a hands-on handyman with years of experience in painting, repairs, electrical work, and more. His passion for the craft and dedication to service are what make this business stand out.
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-handyman text-white text-center p-4 mt-10">
+    &copy; 2025 Herrera Handyman Service. All rights reserved.
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
