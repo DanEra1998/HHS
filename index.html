@@ -17,7 +17,7 @@
       theme: {
         extend: {
           colors: {
-            handyman: '#1f2937', // dark grayish
+            handyman: '#000000', // dark grayish
           },
         },
       },
@@ -28,54 +28,108 @@
 <body class="bg-gray-50 text-gray-800 border-4 border-solid border-red-500">
 
     <header class="bg-white shadow p-4 border-4 border-solid border-green-500">
-        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-4">
-          
-          <!-- Logo Section -->
-          <div class="flex-shrink-0 border-4 border-solid border-red-500">
-            <img src="HHS LOGO.png" alt="Herrera Handyman Logo" class="h-auto sm:w-16 md:w-16 lg:w-16 xl:w-64 max-w-full" />
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
+      
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <img src="NO BLACK NO TEXT LOGO.png" alt="Herrera Handyman Logo" class="h-auto w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 max-w-full" />
           </div>
       
-          <!-- Nav Section -->
-          <div class="flex flex-col justify-center flex-grow items-end sm:items-center w-1/2 border-4 border-solid border-red-500">
-            <h1 class="text-xl sm:text-2xl font-bold text-blue-800 mb-2 text-right sm:text-center">
-              Herrera Handyman Service
-            </h1>
-            <nav>
-              <ul class="flex flex-wrap gap-6 text-gray-700 text-sm justify-end sm:justify-center">
-                <li><a href="#services" class="hover:text-blue-600">Services</a></li>
-                <li><a href="about.html" class="hover:text-blue-600">About</a></li>
-                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
+         <!-- Title + Nav + Button -->
+<div class="flex-1 flex items-center justify-between gap-4 flex-wrap">
+
+    <!-- Left Group (Title + Nav Links) -->
+    <div class="flex flex-wrap items-center gap-6">
+      <span class="text-lg sm:text-xl font-bold text-black whitespace-nowrap">
+        Herrera Handyman Service
+      </span>
+  
+      <!-- Mobile toggle button -->
+      <button id="mobile-menu-toggle" class="md:hidden text-2xl focus:outline-none">
+        ☰
+      </button>
+  
+      <!-- Nav links (hidden on small screens) -->
+      <div id="nav-links" class="hidden md:flex flex-wrap items-center gap-6">
+        <a href="index.html#services" class="hover:text-blue-600 text-sm text-gray-700">Services</a>
+        <a href="about.html" class="hover:text-blue-600 text-sm text-gray-700">About</a>
+      </div>
+    </div>
+  
+    <!-- Right-side Button -->
+    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm whitespace-nowrap">
+      Contact Us
+    </a>
+  </div>
+  
       
         </div>
       </header>
       
       
+      
   <!-- Main Content -->
-  <main class="p-8">
-    <section class="text-center">
-      <h2 class="text-2xl font-semibold mb-4">What We Do</h2>
-      <p class="max-w-xl mx-auto text-md">
+  <main class="border-t-2 border-black">
+
+    <!-- Full-width background image -->
+    <section
+      class="w-full h-[60vh] bg-cover bg-center"
+      style="background-image: url('GREEN\ WHITE\ BUIDLING.png');"
+
+    >
+      <!-- Optional content inside image (like overlay title) -->
+      
+      <div class="w-full h-full flex items-center justify-center bg-black bg-opacity-40">
+        <h1 class="text-white text-3xl font-bold">Your Trusted Handyman</h1>
+      </div>
+     
+    </section>
+  
+    <!-- What We Do section -->
+    <section class="text-center border-2 border-solid border-red-500 py-10 px-4">
+      <h2 class="text-3xl font-bold mb-6 border-b-4 border-blue-500 inline-block pb-2 text-gray-900">
+        What We Do
+      </h2>
+      <p class="max-w-2xl mx-auto text-lg mb-8 text-gray-700">
         From plumbing to painting, electrical to drywall — we handle it all with professional quality and honest service.
       </p>
-    </section>
+    
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-left gap-y-4 gap-x-8 mt-8 px-8 pl-24">
 
-    <!-- Call to Action -->
-    <section class="mt-10 text-center">
-      <button onclick="showContact()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded">
-        Get a Free Estimate
-      </button>
-    </section>
 
-    <!-- Contact (hidden initially) -->
+        <div><span class="text-green-600 font-bold">✔</span> Cleaning</div>
+        <div><span class="text-green-600 font-bold">✔</span> Electrical work</div>
+        <div><span class="text-green-600 font-bold">✔</span> General repairs</div>
+        <div><span class="text-green-600 font-bold">✔</span> Remodeling</div>
+        <div><span class="text-green-600 font-bold">✔</span> Drywall installation</div>
+        <div><span class="text-green-600 font-bold">✔</span> Install flooring</div>
+        <div><span class="text-green-600 font-bold">✔</span> Tile work installation</div>
+        <div><span class="text-green-600 font-bold">✔</span> Plumbing fixture installation</div>
+        <div><span class="text-green-600 font-bold">✔</span> Interior painting</div>
+        <div><span class="text-green-600 font-bold">✔</span> Paint indoors</div>
+        <div><span class="text-green-600 font-bold">✔</span> Exterior painting</div>
+        <div><span class="text-green-600 font-bold">✔</span> Painting</div>
+        <div><span class="text-green-600 font-bold">✔</span> Drywall repair</div>
+        <div><span class="text-green-600 font-bold">✔</span> Repair flooring</div>
+        <div><span class="text-green-600 font-bold">✔</span> Repair water fixtures</div>
+        <div><span class="text-green-600 font-bold">✔</span> Tile work replacement</div>
+        <div><span class="text-green-600 font-bold">✔</span> Custom Tile art installation</div>
+        <div><span class="text-green-600 font-bold">✔</span> Custom projects</div>
+        <div><span class="text-green-600 font-bold">✔</span> Installation of crown molding</div>
+        <div><span class="text-green-600 font-bold">✔</span> Remodel bathrooms using marble</div>
+        <div><span class="text-green-600 font-bold">✔</span> Remove wallpaper</div>
+      </div>
+    </section>
+    
+    
+    <!-- Contact (hidden initially, used by showContact()) -->
     <section id="contact" class="hidden mt-10 text-center">
       <h3 class="text-xl font-bold mb-2">Contact Us</h3>
       <p>Phone: <a href="tel:6268186727" class="text-blue-600 underline">626-818-6727</a></p>
       <p>Email: <a href="mailto:service@herrerahandyman.com" class="text-blue-600 underline">service@herrerahandyman.com</a></p>
     </section>
   </main>
+  
 
   <!-- Footer -->
   <footer class="bg-handyman text-white text-center p-4 mt-10">

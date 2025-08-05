@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Herrera Handyman Service</title>
+  <title>Contact | Herrera Handyman Service</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Link to external CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Optional Tailwind Custom Config -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            handyman: '#000000', // dark gray
+            handyman: '#000000',
           },
         },
       },
@@ -30,7 +27,6 @@
   <!-- Header -->
   <header class="bg-white shadow p-4 border-4 border-solid border-green-500">
     <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
-
       <!-- Logo -->
       <div class="flex-shrink-0">
         <img src="NO BLACK NO TEXT LOGO.png" alt="Herrera Handyman Logo" class="h-auto w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 max-w-full" />
@@ -38,17 +34,16 @@
 
       <!-- Title + Nav + Button -->
       <div class="flex-1 flex items-center justify-between flex-wrap gap-4">
-
         <!-- Title + Nav Group -->
         <div class="flex flex-wrap items-center gap-6">
           <span class="text-lg sm:text-xl font-bold text-black whitespace-nowrap">
             Herrera Handyman Service
           </span>
           <a href="index.html#services" class="hover:text-blue-600 text-sm text-gray-700">Services</a>
-          <a href="about.html" class="text-sm font-semibold text-blue-700 underline">About</a>
+          <a href="about.html" class="hover:text-blue-600 text-sm text-gray-700">About</a>
         </div>
 
-        <!-- Get a Quote Button -->
+        <!-- Contact Button (Active Page) -->
         <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm whitespace-nowrap">
           Contact Us
         </a>
@@ -59,24 +54,29 @@
   <!-- Main Content -->
   <main class="p-8 max-w-4xl mx-auto">
     <section class="text-center mb-12">
-      <h2 class="text-3xl font-semibold mb-4 text-handyman">About Us</h2>
-      <p class="text-md max-w-2xl mx-auto">
-        Herrera Handyman Service was founded with one simple goal: to bring trustworthy, professional repair and maintenance services to homeowners and small businesses. From humble beginnings to a growing, loyal client base, our mission remains the same — quality work, done right the first time.
+      <h2 class="text-3xl font-semibold mb-4 text-handyman">Contact Us</h2>
+      <p class="text-md max-w-2xl mx-auto mb-6">
+        Have questions or need a quote? We're here to help! Reach out to us directly through the info below.
       </p>
-    </section>
 
-    <section class="text-center mb-12">
-      <h3 class="text-xl font-bold mb-2 text-handyman">Our Philosophy</h3>
-      <p class="text-md max-w-2xl mx-auto">
-        We believe in treating your home like it's our own. That means clear communication, respect for your time and space, and always delivering what we promise — no shortcuts, no hidden costs.
-      </p>
-    </section>
-
-    <section class="text-center">
-      <h3 class="text-xl font-bold mb-2 text-handyman">Meet the Owner</h3>
-      <p class="text-md max-w-2xl mx-auto">
-        Daniel Herrera brings over a decade of hands-on experience in residential and commercial repair. From electrical to drywall, Daniel's dedication to excellence and genuine care for clients is what makes this service stand out.
-      </p>
+      <div class="text-left bg-white shadow-md rounded p-6 max-w-md mx-auto space-y-4 border border-gray-200">
+        <div>
+          <h3 class="font-semibold">Phone</h3>
+          <p><a href="tel:6268186727" class="text-blue-600 underline">626-818-6727</a></p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Email</h3>
+          <p><a href="mailto:service@herrerahandyman.com" class="text-blue-600 underline">service@herrerahandyman.com</a></p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Service Area</h3>
+          <p>Los Angeles County, Orange County, and surrounding areas</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Hours</h3>
+          <p>Mon–Sat: 8:00 AM – 6:00 PM<br>Sunday: Closed</p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -85,7 +85,6 @@
     &copy; 2025 Herrera Handyman Service. All rights reserved.
   </footer>
 
-  <!-- External JS -->
   <script src="script.js"></script>
 </body>
 </html>
